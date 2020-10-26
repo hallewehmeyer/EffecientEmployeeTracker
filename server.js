@@ -1,4 +1,3 @@
-//=== Dependencies====//
 const inquirer = require("inquirer")
 const mysql = require("mysql")
 
@@ -11,13 +10,13 @@ const connection = mysql.createConnection({
   });
 
 
-//=== Connection ID ====// 
+
 connection.connect(function(err) {
     if (err) throw err
     console.log("Connected as Id" + connection.threadId)
     startPrompt();
 });
-//====Initial Prompt ====//
+
 function startPrompt() {
   selectManager()
     inquirer.prompt([
@@ -38,3 +37,42 @@ function startPrompt() {
               "Quit"
             ]
     }
+  ]).then(function(val) {
+    switch (val.choice) {
+        case "View All Employees?":
+          viewAllEmployees();
+        break;
+
+      case "View All Employee's By Roles?":
+          viewAllRoles();
+        break;
+      case "View all Emplyees By Deparments":
+          viewAllDepartments();
+        break;
+      
+      case "Add Employee?":
+            addEmployee();
+          break;
+
+      case "Update Employee":
+            updateEmployee();
+          break;
+  
+        case "Add Role?":
+            addRole();
+          break;
+  
+        case "Add Department?":
+            addDepartment();
+          break;
+        case "Update employee manager":
+            addUpdateEmployeeManager();
+            break;
+        case "View all employees by manager":
+            viewEmpByManager();
+            break;
+          default:
+        quit();
+        }
+})
+}
