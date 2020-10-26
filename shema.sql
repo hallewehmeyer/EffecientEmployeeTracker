@@ -60,19 +60,19 @@ VALUE ("Lawyer", 190000, 4);
 
 -- EMPLOYEE SEEDS -------
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Jessica", "Haze", null, 1);
+VALUE ("Billy", "Black", null, 1);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Tiffany", "Patric", null, 2);
+VALUE ("Shannon", "Ohenry", null, 2);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Mia","Lam",null,3);
+VALUE ("Lester","Hemsworth",null,3);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Bently", "Lao", 1, 4);
+VALUE ("Richard", "Mackintosh", 1, 4);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Chris", "Melby", 4, 5);
+VALUE ("Anthony", "Smith", 4, 5);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Jason", "Baker", 1, 6);
+VALUE ("Jennifer", "Atkins", 1, 6);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Tom", "Nice", 2, 7);
+VALUE ("Jason", "Derulo", 2, 7);
 
 -- SELECTING FOR CREATING 
 --TABLES IN OUR SQL WORKBENCH 
