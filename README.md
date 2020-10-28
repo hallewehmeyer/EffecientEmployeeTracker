@@ -13,9 +13,9 @@
   #### Test
     -There is no testing necessary for this app, user only needs to follow instructions listed under "Usage" 
   ## Example Images
-    <img src="Assets/mainmenu.png" class="calc" alt="window colors">
-    <img src="Assets/roles.png" class="calc" alt="window colors">
-    <img src="Assets/updatemngr.png" class="calc" alt="window colors">
+    ![mainmenu](mainmenu.png)
+    ![roles](roles.png)
+    ![updatemngr](updatemngr.png)
   ### Questions?
   -If you have any questions, you can reach me here:
   -GitHub: <https://github.com/https://github.com/hallewehmeyer>
